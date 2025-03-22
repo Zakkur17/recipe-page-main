@@ -27,8 +27,8 @@ The challenge was to build a responsive recipe page for a "Simple Omelette Recip
 
 ### Links
 
-- **Live Site URL**: [https://your-username.github.io/recipe-page/](https://your-username.github.io/recipe-page/) *(Replace with your actual live site URL)*
-- **Solution URL**: [https://github.com/your-username/recipe-page](https://github.com/your-username/recipe-page) *(Replace with your actual GitHub repository URL)*
+- **Live Site URL**: [https://zakkur17.github.io/recipe-page-main/]
+- **Solution URL**: [https://github.com/Zakkur17/recipe-page-main.git]
 
 ## My Process
 
