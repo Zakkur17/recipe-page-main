@@ -14,14 +14,14 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /*Recipe container*/
 .recipe-container {
     background-color: hsl(0, 0%, 100%); /*White*/
     border-radius: 1rem;
-    max-width: 375px;
+    max-width: 90%;
     width: 100%;
     padding: 1.5rem;
 }
@@ -49,7 +49,7 @@ h2 {
     font-family: 'Young Serif', serif;
     font-weight: 400;
     font-size: 1.5rem;
-    color: hsl(24, 5%, 18%);
+    color: hsl(14, 45%, 36%);
     margin-bottom: 1rem;
 }
 
@@ -59,6 +59,11 @@ h2 {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 2rem;
+}
+.preparation-time h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: hsl(332, 51%, 32%);
 }
 
 .preparation-time ul {
@@ -85,6 +90,8 @@ h2 {
 /*Ingredients section*/
 .ingredients {
     margin-bottom: 2rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 1rem;
 }
 
 .ingredients ul {
@@ -107,6 +114,8 @@ h2 {
 /*Instructions section*/
 .instructions {
     margin-bottom: 2rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 1rem;
 }
 
 .instructions ol {
@@ -124,7 +133,7 @@ h2 {
 }
 
 .instructions li strong {
-    color: hsl(14, 45%, 36%);
+    color: hsl(30, 10%, 34%);
     font-weight: 700;
 }
 
@@ -154,9 +163,9 @@ h2 {
   .nutrition td {
     font-weight: 700;
     color: hsl(14, 45%, 36%); /* Brown 800 */
-  }
+}
 
-
+/* Attribution */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -166,3 +175,38 @@ h2 {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+    .recipe-container {
+      max-width: 375px;
+      padding: 1rem;
+    }
+  }
+  
+  /* Desktop-specific adjustments */
+  @media (min-width: 768px) {
+    .recipe-container {
+      max-width: 48rem;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+    }
+    .recipe-header,
+    .preparation-time,
+    .ingredients,
+    .instructions {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* Optional: Wider desktop layout for very large screens */
+  @media (min-width: 1440px) {
+    .recipe-container {
+      max-width: 52rem; /* Slightly wider for 1440px screens (832px) */
+    }
+  }
